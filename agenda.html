@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>SC-502 Ambiente Web Cliente Servidor</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.webp" alt="Logotipo"> <!-- texto alternativo ayuda en el posicionamiento -->
+        </a>    
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Contenidos</a>
+        <a class="navegacion__enlace" href="nosotros.html">Acerca de</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="agenda.html">Agenda</a>
+    </nav>
+
+    <div class="contener-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h2>Agenda cita para consultar temas</h2>
+            </header>
+
+            <nav class="tabs">
+                <button type="button" data-paso="1">Temas</button>
+                <button type="button" data-paso="2">Información del estudiante</button>
+                <button type="button" data-paso="3">Resumen</button>
+            </nav>
+
+            <div id="paso-1" class="seccion">
+                <h2>Temas</h2>
+                <p class="text-center">Elige tus temas de consulta</p>
+                <div id="temas" class="listado-temas"></div>
+            </div>
+
+            <div id="paso-2" class="seccion">
+                <h2>Cita</h2>
+                <p class="text-center">Digita tus datos y fecha de tu cita</p>
+                <form class="formulario">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div class="campo">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora">
+                    </div>
+                </form>
+            </div>
+
+            <div id="paso-3" class="seccion contenido-resumen">
+                <h2>Resumen</h2>
+            </div>
+
+            <div class="paginacion">
+                <button id="anterior">&laquo; Anterior</button>
+                <button id="siguiente">&raquo; Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__texto">SC-502 Ambiente Web Cliente Servidor - Todos los derechos Reservados 2023.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
