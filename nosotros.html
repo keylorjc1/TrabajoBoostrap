@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -24,11 +25,11 @@
         <a class="navegacion__enlace" href="agenda.html">Agenda</a>
     </nav>
 
-    <main class="contenedor">
+    <main class="container">
         <h1>Nosotros</h1>
 
-        <div class="nosotros">
-            <div class="nosotros__contenido">
+        <div class="row">
+            <div class="col-md-6">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum quisquam, earum molestiae at impedit sint voluptatem qui dolore non illum placeat quidem ad blanditiis aspernatur. Explicabo, culpa necessitatibus! Ipsum.
                 </p>
@@ -36,33 +37,35 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro, sit omnis qui labore, quasi blanditiis quia repellendus sapiente repudiandae, vel deleniti aliquid exercitationem iusto dolore fugiat nostrum culpa! Similique!
                 </p>
             </div>
-            <img class="nosotros__imagen" src="img/nosotros.png" alt="imagen nosotros">
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/nosotros.png" alt="imagen nosotros">
+            </div>
         </div>
     </main>
 
-    <section class="contenedor comprar">
+    <section class="container comprar">
         <h2 class="comprar__titulo">¿Por qué estudiar con nosotros?</h2>
 
-        <div class="bloques">
-            <div class="bloque">
+        <div class="row">
+            <div class="col-md-3">
                 <img class="bloque__imagen" src="img/icono_1.svg" alt="porque comprar">
                 <h3 class="bloque__titulo">El Mejor Precio</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in reiciendis dolore consectetur accusantium unde harum illo quidem atque iusto natus, nemo iure magnam explicabo rem, deleniti at ipsa sunt!</p>
             </div> <!-- bloque -->
 
-            <div class="bloque">
+            <div class="col-md-3">
                 <img class="bloque__imagen" src="img/icono_2.svg" alt="porque comprar">
                 <h3 class="bloque__titulo">Para Devs</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus eaque quas sint cupiditate aliquam, cumque ratione alias quidem dolor neque fugit a commodi atque minus! Ad inventore necessitatibus fugit.</p>
             </div> <!-- bloque -->
 
-            <div class="bloque">
+            <div class="col-md-3">
                 <img class="bloque__imagen" src="img/icono_3.svg" alt="porque comprar">
                 <h3 class="bloque__titulo">La mejor en ingenierías</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi voluptates aliquid sed illum, perspiciatis laborum atque itaque odit ad quo unde quia laudantium, nostrum quis placeat libero nobis delectus!</p>
             </div> <!-- bloque -->
 
-            <div class="bloque">
+            <div class="col-md-3">
                 <img class="bloque__imagen" src="img/icono_4.svg" alt="porque comprar">
                 <h3 class="bloque__titulo">La Mejor Calidad</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi voluptates aliquid sed illum, perspiciatis laborum atque itaque odit ad quo unde quia laudantium, nostrum quis placeat libero nobis delectus!</p>
@@ -70,5 +73,9 @@
         </div> <!-- bloques -->
     </section>
 
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
