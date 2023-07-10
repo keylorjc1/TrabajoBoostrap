@@ -292,3 +292,24 @@ h1 span {
 .formulario__campo:hover {
     color: var(--negro);
 }
+
+/* CSS de tema.html con Bootstrap */
+
+.col p{
+    color: var(--negro);
+    text-align: center;
+}
+
+nav .container-fluid{
+    background-color: var(--primarioOscuro);
+}
+
+.nav-link{
+    --bs-nav-link-color: var(--blanco);
+    --bs-nav-link-hover-color: var(--primario);
+}
+
+div .navbar-nav{
+    font-size: 3rem;
+    color: var(--blanco);
+}
