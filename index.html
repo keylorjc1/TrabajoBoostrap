@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>SC-502 Ambiente Web Cliente Servidor</title>
 </head>
@@ -18,8 +19,9 @@
             <img class="header__logo" src="img/logo.webp" alt="Logotipo"> <!-- texto alternativo ayuda en el posicionamiento -->
         </a>    
     </header>
+    
 
-    <!-- Clases de bootstrap para barra de navegación -->
+    <!-- Barra de navegación utilizando clases de Bootstrap -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,62 +49,93 @@
                         <p class="tema__tiempo">10 minutos</p>
                     </div>
                 </a>
-            </div> <!--.tema-->
-            <div class="tema">
-                <a href="tema.html">
-                    <img class="tema__imagen" src="img/2.png" alt="imagen tema">
-                    <div class="tema__informacion">
-                        <p class="tema__nombre">Etiquetas semánticas</p>
-                        <p class="tema__tiempo">45 minutos</p>
-                    </div>
-                </a>
-            </div> <!--.tema-->
-            <div class="tema">
-                <a href="tema.html">
-                    <img class="tema__imagen" src="img/3.png" alt="imagen tema">
-                    <div class="tema__informacion">
-                        <p class="tema__nombre">CSS</p>
-                        <p class="tema__tiempo">2 horas</p>
-                    </div>
-                </a>
-            </div> <!--.tema-->
-            <div class="tema">
-                <a href="tema.html">
-                    <img class="tema__imagen" 4
-                    src="img/4.png" alt="imagen tema">
-                    <div class="tema__informacion">
-                        <p class="tema__nombre">Propiedades básicas CSS</p>
-                        <p class="tema__tiempo">25 minutos</p>
-                    </div>
-                </a>
-            </div> <!--.tema-->
-            <div class="tema">
-                <a href="tema.html">
-                    <img class="tema__imagen" src="img/5.png" alt="imagen tema">
-                    <div class="tema__informacion">
-                        <p class="tema__nombre">Selectores</p>
-                        <p class="tema__tiempo">3 horas</p>
-                    </div>
-                </a>
-            </div> <!--.tema-->
-            <div class="tema">
-                <a href="tema.html">
-                    <img class="tema__imagen" src="img/6.png" alt="imagen tema">
-                    <div class="tema__informacion">
-                        <p class="tema__nombre">Especificidad</p>
-                        <p class="tema__tiempo">2 horas</p>
-                    </div>
-                </a>
-            </div> <!--.tema-->
-            <div class="tema">
-                <a href="tema.html">
-                    <img class="tema__imagen" src="img/7.png" alt="imagen tema">
-                    <div class="tema__informacion">
-                        <p class="tema__nombre">Colores</p>
-                        <p class="tema__tiempo">30 minutos</p>
-                    </div>
-                </a>
-            </div> <!--.tema-->
+                <div class="row">
+                    <!-- Patrón de temas utilizando clases de Bootstrap -->
+                    <!-- Aplicado Bootstrap: col-sm-6 col-md-4 col-lg-3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/1.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">HTML</p>
+                                    <p class="tema__tiempo">10 minutos</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/2.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">Etiquetas semánticas</p>
+                                    <p class="tema__tiempo">45 minutos</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+        
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/3.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">CSS</p>
+                                    <p class="tema__tiempo">2 horas</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+        
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/4.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">Propiedades básicas CSS</p>
+                                    <p class="tema__tiempo">25 minutos</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+        
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/5.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">Selectores</p>
+                                    <p class="tema__tiempo">3 horas</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+        
+                    <!-- Repite el mismo patrón para los demás temas -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/6.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">Flexbox</p>
+                                    <p class="tema__tiempo">1 hora</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+        
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="tema">
+                            <a href="tema.html">
+                                <img class="tema__imagen" src="img/7.png" alt="imagen tema">
+                                <div class="tema__informacion">
+                                    <p class="tema__nombre">Grid</p>
+                                    <p class="tema__tiempo">2 horas</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!--.tema-->
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/8.png" alt="imagen tema">
@@ -112,6 +145,8 @@
                     </div>
                 </a>
             </div> <!--.tema-->
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/9.png" alt="imagen tema">
@@ -121,6 +156,8 @@
                     </div>
                 </a>
             </div> <!--.tema-->
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/10.png" alt="imagen tema">
@@ -130,6 +167,8 @@
                     </div>
                 </a>
             </div> <!--.tema-->
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/11.png" alt="imagen tema">
@@ -139,6 +178,8 @@
                     </div>
                 </a>
             </div> <!--.tema-->
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/12.png" alt="imagen tema">
@@ -148,6 +189,8 @@
                     </div>
                 </a>
             </div> <!--.tema-->
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/13.png" alt="imagen tema">
@@ -157,6 +200,8 @@
                     </div>
                 </a>
             </div> <!--.tema-->
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="tema">
                 <a href="tema.html">
                     <img class="tema__imagen" src="img/14.png" alt="imagen tema">
@@ -166,12 +211,14 @@
                     </div>
                 </a>
             </div> <!--.tema-->
-
-            <div class="grafico grafico--columnas"></div>
-            <div class="grafico grafico--sidebar"></div>
-
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="grafico grafico--columnas"></div>
             </div>
-
+            <div class="col">
+                <div class="grafico grafico--sidebar"></div>
+            </div>
         </div>
     </main>
 
@@ -179,7 +226,7 @@
         <p class="footer__texto">SC-502 Ambiente Web Cliente Servidor - Todos los derechos Reservados 2023.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
